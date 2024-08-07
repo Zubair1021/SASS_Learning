@@ -1,6 +1,5 @@
 # SASS (Syntactically Awesome Style Sheet) Notes 
-![image](https://github.com/user-attachments/assets/8c4b5606-1363-499b-8103-2212c98c03ee)
-
+![image](https://github.com/user-attachments/assets/1b72efff-9806-4aa3-8a60-518941ab8fcc)
 
 ## Koala Setup for CSS conversion (Free)
 *Download Link*  http://koala-app.com/
