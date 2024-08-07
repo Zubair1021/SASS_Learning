@@ -1,0 +1,109 @@
+// -----------------Variables-----------------
+
+$main-color: lightpink;
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: $main-color;
+}
+//---------------------Mixins------------------
+@mixin container-bd($color){
+    border: 2px solid $color;
+    border-radius: 4px;
+    
+}
+@mixin heading-style($fontsize,$fontcolor,$Hovercolor){
+    font-size: $fontsize;
+    color: $fontcolor;
+
+    &:hover{
+        color: $Hovercolor;
+      
+    }
+}
+
+//---------------------Extends Function Reuseable function (Never appear in CSS file)--------------
+%buttonstyle{
+    background-color: black;
+    color: white;
+    display: block;
+    font-size: 14px;
+    margin: 20px 0 10px 5px;
+    padding: 5px;
+    border-radius: 7px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: gray;
+    }
+
+}
+
+
+
+// Nesting in SCSS
+
+h1{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: red
+}
+
+.container1{
+
+    //Maixis use
+    @include container-bd(black);
+    padding: 6px;
+    margin: 10px;
+
+    p{
+        font-size: 16px;
+
+
+        button{
+            //Use of Extends
+                @extend %buttonstyle;
+        }
+
+    }
+
+
+    h4{
+
+        @include heading-style(22px,rgb(68, 139, 100),rgb(219, 130, 28));
+    }
+
+    #pra2{
+        font-size: 17px;
+        color: blue;
+    }
+
+}
+
+.container2{
+    @include container-bd(rgb(172, 113, 74));
+    margin: 10px;
+    padding: 6px;
+
+    h4{
+        @include heading-style(22px,rgb(24, 135, 209),rgb(233, 12, 185));
+    }
+    
+    button{
+          //Use of Extends
+             @extend %buttonstyle;
+    }
+
+}
+
+//Footer style import from another file
+@import "footer";
+
