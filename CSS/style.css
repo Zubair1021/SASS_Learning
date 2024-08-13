@@ -63,4 +63,11 @@ h1 {
     font-size: 13px;
     padding: 5px; }
 
+.test .icon-loginbtn {
+  background-image: url("/images/loginbtn.png");
+  border-radius: 5px; }
+
+.box {
+  width: 500px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -104,6 +104,38 @@ h1{
 
 }
 
+
+
+
 //Footer style import from another file
 @import "footer";
+
+
+//---------------------Interpolation and String opeartor------------------
+
+
+@mixin inserticon($icon-name){
+
+    .icon-#{$icon-name}{  //inter
+        background-image: url("/images/#{$icon-name}.png");  //inter
+        border-radius: 5+px;               //String opeartor
+    }
+}
+
+.test{
+    @include inserticon("loginbtn");
+}
+
+
+// ---------------------Functions in SASS------------------
+
+@function width-half($value){
+    @return $value/2;
+}
+
+.box{
+    width: width-half(1000px);
+}
+
+
 
