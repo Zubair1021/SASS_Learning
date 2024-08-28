@@ -3,4 +3,5 @@
 
 ## Koala Setup for CSS conversion (Free)
 *Download Link*  http://koala-app.com/
+*Help Link* https://raybo.org/slides_sassesst/#/   (Get this from LinkedIn Course)
 
